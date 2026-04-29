@@ -8,9 +8,8 @@ const DATA = {
   phone:      "+91 7861907608",
   linkedin:   "https://linkedin.com/in/ronit-shah-b55b45283",
   github:     "https://github.com/ronit16",
-  twitter:    "https://twitter.com/",   // add your handle if you have one
-  location:   "Ahmedabad, Gujarat, India",
-  resumeUrl:  "#",  // ← replace with a link to your hosted resume PDF
+  twitter:    "https://x.com/Ronit_Shah1601",
+  resumeUrl:  "/Ronit_Shah_Resume-1.pdf",
 
   // ── ROTATING ROLES (hero typing effect) ───────────────
   roles: [
@@ -155,32 +154,36 @@ const DATA = {
   ],
 
   // ── PROJECTS ──────────────────────────────────────────
-  // category options: "agentic" | "cv" | "multimodal" | "edtech"
+  //
+  //  HOW TO ADD / EDIT A PROJECT
+  //  ────────────────────────────
+  //  Copy the template below, fill in the fields, and paste it into the array.
+  //
+  //  {
+  //    title:    "Project Name",
+  //    icon:     "🔥",            // single emoji shown on the card
+  //    desc:     "One paragraph describing what it does and the impact.",
+  //    tags:     ["Tag1", "Tag2", "Tag3"],   // tech stack — keep it ≤ 6
+  //    category: "agentic",       // filter tab: "agentic" | "cv" | "multimodal" | "edtech"
+  //    github:   "https://github.com/ronit16/repo",  // "" = hides the button
+  //    demo:     "https://your-demo.com",            // "" = hides the button
+  //  },
+  //
+  //  CATEGORIES (controls which filter tab shows the card)
+  //    "agentic"    → LLM / RAG / Agentic AI / Trading / Voice
+  //    "cv"         → Computer Vision / Geospatial / Satellite
+  //    "multimodal" → Vision + Speech + Text projects
+  //    "edtech"     → Education / HR / EdTech platforms
+  //
   projects: [
+
+    // ── Agentic AI ─────────────────────────────────────
     {
       title:    "Krishi Maitri — Farmer AI Platform",
       icon:     "🌾",
       desc:     "Farmer-focused AI platform integrating crop disease detection, market price updates, weather forecasting, and government scheme insights. Uses Agentic AI, RAG pipelines, vector databases, and Gemini-based generative AI for real-time personalised recommendations.",
       tags:     ["Agentic AI", "RAG", "Gemini", "GCP", "Firebase", "ADK"],
       category: "agentic",
-      github:   "https://github.com/ronit16",
-      demo:     "",
-    },
-    {
-      title:    "AI Study Assistant — Multimodal",
-      icon:     "📚",
-      desc:     "Full-stack AI web assistant for students to query academic questions via image or speech. Built with WebRTC for real-time camera/mic integration, Google Speech-to-Text, and Gemini multimodal API backed by GCP Cloud Functions and Pub/Sub.",
-      tags:     ["Gemini", "WebRTC", "GCP", "FastAPI", "WebSockets", "TTS"],
-      category: "multimodal",
-      github:   "https://github.com/ronit16",
-      demo:     "",
-    },
-    {
-      title:    "AI Solutions Suite — EdTech & HR",
-      icon:     "🎓",
-      desc:     "All-in-one AI platform for education and HR automation using LLMs, RAG, and agentic tool-calling. Includes a 24/7 Virtual Assistant, Interactive Lesson Planner, Recommendation Engine, Worksheet Generator, and resume parsing/scoring tools.",
-      tags:     ["LangChain", "RAG", "GCP Cloud Run", "FastAPI", "Transformers"],
-      category: "edtech",
       github:   "https://github.com/ronit16",
       demo:     "",
     },
@@ -202,6 +205,30 @@ const DATA = {
       github:   "",
       demo:     "",
     },
+
+    // ── Multimodal ─────────────────────────────────────
+    {
+      title:    "AI Study Assistant — Multimodal",
+      icon:     "📚",
+      desc:     "Full-stack AI web assistant for students to query academic questions via image or speech. Built with WebRTC for real-time camera/mic integration, Google Speech-to-Text, and Gemini multimodal API backed by GCP Cloud Functions and Pub/Sub.",
+      tags:     ["Gemini", "WebRTC", "GCP", "FastAPI", "WebSockets", "TTS"],
+      category: "multimodal",
+      github:   "https://github.com/ronit16",
+      demo:     "",
+    },
+
+    // ── EdTech ─────────────────────────────────────────
+    {
+      title:    "AI Solutions Suite — EdTech & HR",
+      icon:     "🎓",
+      desc:     "All-in-one AI platform for education and HR automation using LLMs, RAG, and agentic tool-calling. Includes a 24/7 Virtual Assistant, Interactive Lesson Planner, Recommendation Engine, Worksheet Generator, and resume parsing/scoring tools.",
+      tags:     ["LangChain", "RAG", "GCP Cloud Run", "FastAPI", "Transformers"],
+      category: "edtech",
+      github:   "https://github.com/ronit16",
+      demo:     "",
+    },
+
+    // ── Computer Vision ────────────────────────────────
     {
       title:    "Satellite Farm Segmentation",
       icon:     "🛰️",
@@ -211,6 +238,7 @@ const DATA = {
       github:   "",
       demo:     "",
     },
+
   ],
 
   // ── EDUCATION ─────────────────────────────────────────

@@ -141,8 +141,7 @@
   const cl = document.getElementById("contact-links");
   cl.innerHTML = `
     <a href="mailto:${DATA.email}" class="contact-link"><div class="c-link-icon">✉</div>${DATA.email}</a>
-    <a href="tel:${DATA.phone}" class="contact-link"><div class="c-link-icon">📞</div>${DATA.phone}</a>
-    <a href="#" class="contact-link"><div class="c-link-icon">📍</div>${DATA.location}</a>`;
+    <a href="tel:${DATA.phone}" class="contact-link"><div class="c-link-icon">📞</div>${DATA.phone}</a>`;
 
   document.getElementById("social-row").innerHTML = `
     <a href="${DATA.github}"   class="social-btn" title="GitHub">⚡</a>
