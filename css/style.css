@@ -177,6 +177,8 @@ body::before {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
 }
 .nav-logo span { color: var(--teal); }
 .nav-links {

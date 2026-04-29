@@ -9,7 +9,7 @@ const DATA = {
   linkedin:   "https://linkedin.com/in/ronit-shah-b55b45283",
   github:     "https://github.com/ronit16",
   twitter:    "https://x.com/Ronit_Shah1601",
-  resumeUrl:  "/Ronit_Shah_Resume-1.pdf",
+  resumeUrl:  "/assets/Ronit_Shah_Resume-1.pdf",
 
   // ── ROTATING ROLES (hero typing effect) ───────────────
   roles: [
