@@ -1,5 +1,4 @@
 (function() {
-  emailjs.init("YOUR_PUBLIC_KEY");
 
   // — page meta
   document.title = DATA.name + " · AI/ML Engineer";
@@ -182,13 +181,13 @@
     btn.disabled = true;
     btn.style.opacity = "0.7";
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-      from_name: name,
-      reply_to:  email,
-      service:   service,
-      message:   message,
+    fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, service, message }),
     })
-    .then(function() {
+    .then(function(res) {
+      if (!res.ok) throw new Error("Server error");
       btn.textContent = "✓ Message Sent!";
       btn.style.background = "#0f6e56";
       btn.style.opacity = "1";
@@ -199,7 +198,7 @@
       setTimeout(() => { btn.textContent = "Send Message →"; btn.style.background = ""; btn.disabled = false; }, 4000);
     })
     .catch(function(err) {
-      console.error("EmailJS error:", err);
+      console.error("Send error:", err);
       btn.textContent = "✗ Send Failed — Try Again";
       btn.style.background = "#991b1b";
       btn.style.opacity = "1";
